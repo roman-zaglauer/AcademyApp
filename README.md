@@ -1,2 +1,2 @@
 # AcademyApp - Academy App
-> Business Application
+> My Business Application
