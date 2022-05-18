@@ -1,6 +1,6 @@
 _schema-version: '3.2'
 ID: AcademyApp
-version: 0.0.1
+version: 0.0.2
 
 parameters:
   enable-parallel-deployments: true
@@ -11,8 +11,8 @@ build-parameters:
       commands:
         - npm install --production
         - npx -p @sap/cds-dk cds build --production
-#        - npx rimraf gen/db/src/gen/data # uncomment this line to prevent loading of initial data which is only relevant for dev/test deployments 
-#        - npx rimraf gen/db/src/gen/csv  # uncomment this line unless db/csv folder has been used for config/control table data which is entirely managed by the developer and never changed by the app
+        - npx rimraf gen/db/src/gen/data # uncomment this line to prevent loading of initial data which is only relevant for dev/test deployments 
+        - npx rimraf gen/db/src/gen/csv  # uncomment this line unless db/csv folder has been used for config/control table data which is entirely managed by the developer and never changed by the app
 
 modules:
   # ---------------- DATABASE DEPLOYER MODULE ------------------
